@@ -1,3 +1,15 @@
+Scenario Details -
+
+- I've developed the cucumber scenario, which covers all the acceptance
+criteria which have been mentioned in task 1.
+- However google provides different results most of times, i've made the test
+robust so that it can handles any number of gumtree results on google page
+ e.g 0 or 5 gumtree results
+- Test clicks on all gumtree links and validates that title has been displayed on gumtree website
+- Test validates that number of results shown at gumtree site are more than 0
+
+
+
 
 ### Prerequisites
 - Language - Java 1.8
