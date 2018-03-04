@@ -4,7 +4,7 @@ Feature: As a customer
 
   Scenario: Search a keyword in google and validate gumtree links
     Given user navigates to google homepage
-    When user performs a search for 'Cars in Isleworth'
+    When user performs a search for 'bikes in Isleworth'
     Then google should display all the available results
     And gumtree page title is visible
     And number of results on gumtree page are more than 0

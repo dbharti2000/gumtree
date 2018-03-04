@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class BasePage {
 
     public static WebDriver driver;
@@ -44,4 +46,15 @@ public class BasePage {
         }
         return null;
     }
+
+    public List<WebElement> getWebElements(final By locator) {
+        try {
+            List<WebElement> elements = driver.findElements(locator);
+            return elements;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

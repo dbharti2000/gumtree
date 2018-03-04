@@ -11,7 +11,7 @@ import static gumtree.cars.stepdefinitions.GeneralStepDefs.driver;
 public class GoogleSearchStepDefs {
 
     private static GoogleHomePage googleHomePage = new GoogleHomePage(driver);
-
+    private static GoogleSearchResultsPage googleSearchResults = new GoogleSearchResultsPage(driver);
 
 
     @Given("^user navigates to google homepage$")
@@ -26,6 +26,7 @@ public class GoogleSearchStepDefs {
 
     @Then("^google should display all the available results$")
     public void google_should_return_more_than_results() throws Throwable {
+        googleSearchResults.displayAllResults();
 
     }
 
