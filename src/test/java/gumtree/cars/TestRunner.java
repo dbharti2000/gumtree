@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         tags = {"@gumtree"},
         features = {"src/test/resources/gumtree.cars"},
         strict = true,
-        glue = {"gumtree.cars.stepDefinitions"},
+        glue = {"gumtree.cars.stepdefinitions"},
         format = {"html:cucumber-html-reports"}
 
 )

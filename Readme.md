@@ -10,8 +10,8 @@
 
 #### Mac
 
-- Chrome -
-
+- Chrome - Version 63.0
+- Firefox - Version 54.0
 
 
 ### Execution Steps
