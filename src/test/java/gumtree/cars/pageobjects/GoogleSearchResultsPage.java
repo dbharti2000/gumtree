@@ -11,6 +11,7 @@ import java.util.List;
 public class GoogleSearchResultsPage extends BasePage {
     private static Logger LOG = LogManager.getLogger(GoogleSearchResultsPage.class);
 
+    private static final By GUMTREE_SEARCH_RESULTS_ON_GOOGLE_PAGE = By.xpath("//div[@class='rc']/h3/a[contains(text(), 'Gumtree')]");
     private static final By All_SEARCH_RESULTS_LINKS_ON_GOOGLE_PAGE = By.xpath("//div[@class='rc']/h3/a");
 
     public GoogleSearchResultsPage(WebDriver driver) {
@@ -24,4 +25,13 @@ public class GoogleSearchResultsPage extends BasePage {
             LOG.info("Search Result Link - " + searchResult.getText());
         }
     }
+
+    public int getGumTreeResultCount() {
+        List<WebElement> gumTreeResults = getWebElements(GUMTREE_SEARCH_RESULTS_ON_GOOGLE_PAGE);
+        if (gumTreeResults.size() == 0) {
+            LOG.info("0 Gumtree results");
+        }
+        return gumTreeResults.size();
+    }
+
 }

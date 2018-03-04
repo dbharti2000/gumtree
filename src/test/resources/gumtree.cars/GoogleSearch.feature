@@ -1,3 +1,4 @@
+@gumtree
 Feature: As a customer
   I want to search for a keyword in google
   So that i can see gumtree links in the results
